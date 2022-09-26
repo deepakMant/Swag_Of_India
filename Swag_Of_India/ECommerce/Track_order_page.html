@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d935ff7ff3.js" crossorigin="anonymous"></script>
+    <title>Track_Order</title>
+    <link rel="icon" href="./image/flavicon.png" type="image/png">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./myprofile.css" type="text/css">
+</head>
+
+<body>
+    <header tabindex="0" aria-label=" swag of india world wild home page" class="container-fluid" id="top">
+
+        <div aria-label="top header bar" tabindex="0"
+            class="header  d-flex align-items-center justify-content-between flex-nowra py-2 px-2 fs-6 px-md-4 ">
+
+            <div class=" d-flex align-items-center order1">
+                <ul aria-label="socialmedia" tabindex="0" class="d-flex align-items-center mb-0">
+                    <li><img tabindex="0" title="facbook" src="./image/facebook round.png" class="img-fluid "
+                            alt="facebook"></li>
+                    <li><img tabindex="0" title="youtube" src="./image/Group 2556.png" class="img-fluid" alt="youtube">
+                    </li>
+                    <li><img tabindex="0" title="twitter" src="./image/Group 2557.png" class="img-fluid" s
+                            alt="twitter"></li>
+                </ul>
+            </div>
+            <div class=" ms-lg-auto  order2">
+                <form action="#">
+                    <div class="d-flex align-items-center p-1 rounded-pill w-100  bg-white ">
+                        <input type="Search" placeholder="Search Product & Brands" name="serach" id="search">
+                        <div role="button" tabindex="0" aria-label="search button">
+                            <i class="fa fa-search"></i>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="order3"
+                class=" d-flex mx-lg-0 mx-md-auto  mx-sm-auto ms-lg-auto firstnav align-items-center  flex-nowrap">
+                <div class="d-flex align-items-center">
+                    <ul role="navigation" class="d-flex align-items-center mb-0">
+                        <li role="none">
+                            <div class="d-flex align-items-center">
+                                <img src="./image/Group 2559.png" class="img-fluid" alt="">
+                                <a aria-label="Contact number +91 987456321" href="#">+91 987456321</a>
+                            </div>
+                        </li>
+                        <li role="none"><a aria-label="Sell On Company" href="./seller.html">Sell On Company</a></li>
+                        <li role="none"><a aria-label="Download App" href="#">Download App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <form action="#">
+                        <div class="d-flex align-items-center">
+                            <img class="flag" src="./image/Group 2560.png" alt="flag">
+                            <select aria-label="select language" id="cuntary" title="select language">
+                                <option value="Hindi">Hindi</option>
+                                <option value="English">English</option>
+                                <option value="Tamil">Tamil</option>
+                                <option value="punjabi">punjabi</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="d-flex justify-content-between align-items-end py-2 px-2 px-md-4">
+
+            <figure tabindex="0" class="logo">
+                <img src="./image/logo.png" class="img-fluid" alt="swag of india logo with lots flower">
+            </figure>
+            <div role="menubar" class="d-none d-md-block">
+                <ul class=" d-flex mb-2 navorder2">
+                    <li role="none"><a role="menuitem" aria-label="home" tabindex="0" href="./homePage.html">Home</a>
+                    </li>
+                    <li role="none"><a role="menuitem" aria-label="Categories" href="#">Categories</a></li>
+                    <li role="none"><a role="menuitem" aria-expanded="true" href="#">Latest</a>
+                        <!-- submenu -->
+                        <ul role="menu" aria-label="Latest" tabindex="-1"
+                            class="bg-light border px-3 ps-2 pe-4  submenu">
+                            <li role="none"><a role="menuitem" href="./return.html">Return Police</a></li>
+                            <li role="none"><a role="menuitem" href="./myprofile.html">My Profile</a role="menuitem">
+                            </li>
+                            <li role="none"><a role="menuitem" href="#">Menu Three</a role="menuitem"></li>
+                            <li role="none"><a role="menuitem" href="#">Menu four</a></li>
+                        </ul>
+                        <!-- submenu start -->
+                    </li>
+                    <li role="none"><a role="menuitem" aria-label="blog" href="#">Blog</a></li>
+                    <li role="none"><a role="menuitem" aria-label="Pages" href="#">Pages</a></li>
+                    <li role="none"><a role="menuitem" aria-label="Contact" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class=" mb-2 navorder3 d-flex" >
+
+                    <a href="./cart_page.html">
+                     <div style="position: relative;">
+                     <img src="./image/Group 2551.png" class="" alt="cart">
+                     <span class="position-absolute translate-middle   badge rounded-circle bg-danger" id="itemCount" style="top: 8px; left: 5px;">
+                         0
+                         <span class="visually-hidden">unread messages</span>
+                       </span>
+                     </div>
+                    </a>
+ 
+                    <a href="./wishlist.html">
+                     <div style="position: relative;">
+                     <img src="./image/Group 2579.png" class="" alt="cart">
+                     <span class="position-absolute translate-middle   badge rounded-circle bg-danger" id="wishListitemCount" style="top: 8px; left: 5px;">
+                         0
+                         <span class="visually-hidden">unread messages</span>
+                       </span>
+                     </div>
+                    </a>
+ 
+                 </div>
+                <div class="navorder4">
+                    <a href="./Login.html"><button class="btnanimation" title="login page">Sign in</button></a>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+
+    <!-- header end  -->
+
+
+
+    <main>
+
+        <nav aria-label="breadcrumb" class="bg-light pt-2 pb-1 mx-3 px-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./homePage.html">Home</a></li>
+                <li class="breadcrumb-item fw-bold " aria-current="page">Profile</li>
+            </ol>
+        </nav>
+
+        <section class="container-md container-fluid">
+            <div class="row">
+                <div class="col-3 d-none d-md-block">
+
+                    <ul class="nav flex-column mb-5">
+                        <li class="nav-item fs-6  fw-bold text-uppercase text-dark nav-link mb-2">my account</li>
+                        <li class="nav-item">
+                            <div style="width: 5.5rem;" class="nav-link py-1 "> <img src="./image//Image 161.png"
+                                    class="img-fluid" alt=""></div>
+                        </li>
+                        <li class="nav-item  fw-normal text-capitalize text-dark px-3 mt-2">deepak mantro</li>
+                        <li class="nav-item  fw-normal  text-dark px-3 ">dee.900@gmaill.com</li>
+                    </ul>
+                    <ul class="nav flex-column mb-5">
+                        <li class="nav-item fs-6 fw-bold text-uppercase text-dark nav-link  mb-1">Orders</li>
+                        <li class="nav-item">
+                            <a class="nav-link hover  fw-normal text-capitalize" aria-current="page" href="./my_Oreder_page.html">my order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover fw-normal active-hover text-capitalize " href="#">track order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover fw-normal text-capitalize" href="./return.html">return order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover fw-normal text-capitalize">cancelled order</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav flex-column mb-5">
+                        <li class="nav-item fs-6 fw-bold text-uppercase text-dark nav-link mb-1">Account</li>
+                        <li class="nav-item">
+                            <a class="nav-link hover  fw-normal text-capitalize" aria-current="page" href="./myprofile.html">profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover fw-normal text-capitalize " href="#">saved addresses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover text-capitalize fw-normal" href="#">saved cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover fw-normal text-capitalize">change password</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover fw-normal text-capitalize" href="./wishlist.html">wishlist</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav flex-column mb-5">
+                        <li class="nav-item fs-6 fw-bold text-uppercase text-dark nav-link  mb-1">payment</li>
+                        <li class="nav-item">
+                            <a class="nav-link hover  fw-normal text-capitalize" aria-current="page" href="#">phonePe
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover fw-normal text-capitalize " href="#">gift card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover text-capitalize fw-normal" href="#">debit card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover fw-normal text-capitalize">credit card</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col ">
+                    <h3 class=" maincolor fw-bold ">TRACK ORDER</h3>
+
+                    <hr class="mt-0">
+    
+                        <div class="row">
+                            <div class="col">
+                                <div class="row border-top border-bottom mb-5 ">
+                                    <div class="col">
+                                        <div class="row pb-3 pt-3">
+                                            <div class="col-8">
+                                                <div class="row ">
+                                                    <div class="col-3">
+                                                        <img class=" img-fluid" src="./image/product3.png" alt="product image">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="fw-bold text-capitalize mb-2 ">your's Favourite premium quality natural...</p>
+                                                        <p class="text-muted text-capitalize mb-2">Color : Multicolor</p>
+                                                        <p class="text-muted text-capitalize mb-5">Seller : Krishnapoojabhandar</p>     
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p class="fw-bold text-capitalize mb-2">Rs <span>1000</span></p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="border rounded-circle border-5 border-success " style="width: 1rem; height: 1rem;"></div>
+                                                    <p class="fw-bold mb-0 ms-2 ">Delivery expected by jul 28</p>
+
+                                                </div>
+                                                <p class="mutied"> Your Order has been placed</p>
+                                                <a class="fw-bold" href="./track_order_details.html">Teack Your Order</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row border-top border-bottom mb-5 ">
+                                    <div class="col">
+                                        <div class="row pb-3 pt-3">
+                                            <div class="col-8">
+                                                <div class="row ">
+                                                    <div class="col-3">
+                                                        <img class=" img-fluid" src="./image/product3.png" alt="product image">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="fw-bold text-capitalize mb-2 ">your's Favourite premium quality natural...</p>
+                                                        <p class="text-muted text-capitalize mb-2">Color : Multicolor</p>
+                                                        <p class="text-muted text-capitalize mb-5">Seller : Krishnapoojabhandar</p>     
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p class="fw-bold text-capitalize mb-2">Rs <span>1000</span></p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="border rounded-circle border-5 border-success " style="width: 1rem; height: 1rem;"></div>
+                                                    <p class="fw-bold mb-0 ms-2 ">Delivery expected by jul 28</p>
+
+                                                </div>
+                                                <p class="mutied"> Your Order has been placed</p>
+                                                <a class="fw-bold" href="./track_order_details.html">Teack Your Order</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="row border-top border-bottom mb-5 ">
+                                    <div class="col">
+                                        <div class="row pb-3 pt-3">
+                                            <div class="col-8">
+                                                <div class="row ">
+                                                    <div class="col-3">
+                                                        <img class=" img-fluid" src="./image/product3.png" alt="product image">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="fw-bold text-capitalize mb-2 ">your's Favourite premium quality natural...</p>
+                                                        <p class="text-muted text-capitalize mb-2">Color : Multicolor</p>
+                                                        <p class="text-muted text-capitalize mb-5">Seller : Krishnapoojabhandar</p>     
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p class="fw-bold text-capitalize mb-2">Rs <span>1000</span></p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="border rounded-circle border-5 border-success " style="width: 1rem; height: 1rem;"></div>
+                                                    <p class="fw-bold mb-0 ms-2 ">Delivery expected by jul 28</p>
+
+                                                </div>
+                                                <p class="mutied"> Your Order has been placed</p>
+                                                <a class="fw-bold" href="./track_order_details.html">Teack Your Order</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="row border-top border-bottom mb-5 ">
+                                    <div class="col">
+                                        <div class="row pb-3 pt-3">
+                                            <div class="col-8">
+                                                <div class="row ">
+                                                    <div class="col-3">
+                                                        <img class=" img-fluid" src="./image/product3.png" alt="product image">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="fw-bold text-capitalize mb-2 ">your's Favourite premium quality natural...</p>
+                                                        <p class="text-muted text-capitalize mb-2">Color : Multicolor</p>
+                                                        <p class="text-muted text-capitalize mb-5">Seller : Krishnapoojabhandar</p>     
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p class="fw-bold text-capitalize mb-2">Rs <span>1000</span></p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="border rounded-circle border-5 border-success " style="width: 1rem; height: 1rem;"></div>
+                                                    <p class="fw-bold mb-0 ms-2 ">Delivery expected by jul 28</p>
+
+                                                </div>
+                                                <p class="mutied"> Your Order has been placed</p>
+                                                <a class="fw-bold" href="./track_order_details.html">Teack Your Order</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="row border-top border-bottom mb-5 ">
+                                    <div class="col">
+                                        <div class="row pb-3 pt-3">
+                                            <div class="col-8">
+                                                <div class="row ">
+                                                    <div class="col-3">
+                                                        <img class=" img-fluid" src="./image/product3.png" alt="product image">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="fw-bold text-capitalize mb-2 ">your's Favourite premium quality natural...</p>
+                                                        <p class="text-muted text-capitalize mb-2">Color : Multicolor</p>
+                                                        <p class="text-muted text-capitalize mb-5">Seller : Krishnapoojabhandar</p>     
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p class="fw-bold text-capitalize mb-2">Rs <span>1000</span></p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center ">
+                                                    <div class="border rounded-circle border-5 border-success " style="width: 1rem; height: 1rem;"></div>
+                                                    <p class="fw-bold mb-0 ms-2 ">Delivery expected by jul 28</p>
+
+                                                </div>
+                                                <p class="mutied"> Your Order has been placed</p>
+                                                <a class="fw-bold" href="./track_order_details.html">Teack Your Order</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+        </section>
+
+
+
+        <section aria-label="services place" tabindex="0" class="services text-center mt-5">
+            <div class="servicesflex d-lg-flex justify-content-center align-items-center gap-4 ">
+                <div class="servicescard d-flex flex-column align-items-center justify-content-center">
+                    <div tabindex="0" class="serviceimage">
+                        <img src="./image/Image 34.png" alt="SECURE payment">
+                    </div>
+                    <div>
+                        <h3>100% SECURE PAYMENTS</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo soluta sequi
+                            nam?
+                            Eveniet veniam in, tempora eligendi obcaecati iste.</P>
+                    </div>
+                </div>
+                <div class="servicescard d-flex flex-column align-items-center justify-content-center">
+                    <div tabindex="0" class="serviceimage">
+                        <img src="./image/Image 35.png" alt="trustpay">
+                    </div>
+                    <div>
+                        <h3>TRUSTPAY</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo soluta sequi
+                            nam?
+                            Eveniet veniam in, tempora eligendi obcaecati iste.</P>
+                    </div>
+                </div>
+                <div class="servicescard d-flex flex-column align-items-center justify-content-center">
+                    <div tabindex="0" class="serviceimage">
+                        <img src="./image/Image 36.png" alt="help center">
+                    </div>
+                    <div>
+                        <h3>HELP CENTER</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo soluta sequi
+                            nam?
+                            Eveniet veniam in, tempora eligendi obcaecati iste.</P>
+                    </div>
+                </div>
+                <div class="servicescard d-flex flex-column align-items-center justify-content-center">
+                    <div class="serviceimage" tabindex="0">
+                        <img src="./image/Image 37.png" alt="shop on the go">
+                    </div>
+                    <div>
+                        <h3>SHOP ON THE GO</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo soluta sequi
+                            nam?
+                            Eveniet veniam in, tempora eligendi obcaecati iste.</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <footer role="contentinfo" class="my-4 mx-0r">
+        <div>
+            <div id="mainfooter" class="mainfooter py-5 px-0 d-lg-flex justify-content-between">
+                <div>
+                    <div>
+                        <h5>POLICY INFO</h5>
+                    </div>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Sale</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Repor Abuse & Takedown Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h5>COMPANY</h5>
+                    </div>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Core Value</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h5>SNAPDEAL BUSNESS</h5>
+                    </div>
+                    <ul>
+                        <li><a href="#">Shopping App</a></li>
+                        <li><a href="#">Advertise On Snapdeal</a></li>
+                        <li><a href="#">Media Enquires</a></li>
+                        <li><a href="#">Sell on Snapdeal</a></li>
+                        <li><a href="#">Be an Affilate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h5>NEED HELP?</h5>
+                    </div>
+                    <ul>
+                        <li><a href="./FAQ.html">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Online Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h5>SUBSCRIBE</h5>
+                    <form action="#">
+                        <div class="subscribeinput d-flex align-items-center">
+                            <input type="email" name="email" id="email" placeholder="Your Email Addres "
+                                class="text-center">
+                            <button title="subscribe button" class="btnblack">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="payment d-lg-flex justify-content-between">
+                <div aria-label=" payment place" tabindex="0">
+                    <h3>PAYMENT</h3>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 38.png"
+                                alt="all cards accept here"></div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 39.png" alt="U P I"></div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 40.png" alt="E M I"></div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 41.png" alt="internet banking">
+                        </div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 42.png" alt="I M P S"></div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 43.png" alt="Wallet"></div>
+                    </div>
+                </div>
+                <div class="socialmedia" aria-label=" join our socialmedia chenels" tabindex="0">
+                    <h3>CONNECT</h3>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="footersocial"><img tabindex="0" src="./image/Image 44.png" alt="facebook"></div>
+                        <div class="footersocial"><img tabindex="0" src="./image/Image 45.png" alt="twitter"></div>
+                        <div class="footersocial"><img tabindex="0" src="./image/Image 46.png" alt="youtube"></div>
+                        <div class="footersocial"><img tabindex="0" src="./image/Image 47.png" alt="instagram"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <a aria-labelledby="arrow" class="pageup" href="#top"><i id="arrow" class="fa fa-angle-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="./home.js"></script>
+</body>
+
+</html>

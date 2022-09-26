@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d935ff7ff3.js" crossorigin="anonymous"></script>
+    <title>Product View</title>
+    <link rel="icon" href="./image/flavicon.png" type="image/png`">
+    <link rel="stylesheet" href="./product_view_listing.css" type="text/css">
+</head>
+
+<body>
+    <header tabindex="0" aria-label=" swag of india world wild home page" class="container-fluid" id="top">
+
+        <div aria-label="top header bar" tabindex="0"
+            class="header  d-flex align-items-center justify-content-between flex-nowra py-2 px-2 fs-6 px-md-4 ">
+
+            <div class=" d-flex align-items-center order1">
+                <ul aria-label="socialmedia" tabindex="0" class="d-flex align-items-center mb-0">
+                    <li><img tabindex="0" title="facbook" src="./image/facebook round.png" class="img-fluid "
+                            alt="facebook"></li>
+                    <li><img tabindex="0" title="youtube" src="./image/Group 2556.png" class="img-fluid" alt="youtube">
+                    </li>
+                    <li><img tabindex="0" title="twitter" src="./image/Group 2557.png" class="img-fluid" s
+                            alt="twitter"></li>
+                </ul>
+            </div>
+            <div class=" ms-lg-auto  order2">
+                <form action="#">
+                    <div class="d-flex align-items-center p-1 rounded-pill w-100  bg-white ">
+                        <input type="Search" placeholder="Search Product & Brands" name="serach" id="search">
+                        <div role="button" tabindex="0" aria-label="search button">
+                            <i class="fa fa-search"></i>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="order3"
+                class=" d-flex mx-lg-0 mx-md-auto  mx-sm-auto ms-lg-auto firstnav align-items-center  flex-nowrap">
+                <div class="d-flex align-items-center">
+                    <ul role="navigation" class="d-flex align-items-center mb-0">
+                        <li role="none">
+                            <div class="d-flex align-items-center">
+                                <img src="./image/Group 2559.png" class="img-fluid" alt="">
+                                <a id="india0" class="flag_india" aria-label="Contact number +91 987456321" href="#">+91
+                                    987456321</a>
+                                <a id="usa1" class="flag" aria-label="Contact number +91 987456321" href="#">+1
+                                    987456321</a>
+                                <a id="canada2" class="flag" aria-label="Contact number +91 987456321" href="#">+1
+                                    777456321</a>
+                                <a id="uae3" class="flag" aria-label="Contact number +91 987456321" href="#">+971
+                                    987456321</a>
+                            </div>
+                        </li>
+                        <li role="none"><a aria-label="Sell On Company" href="./seller.html">Sell On Company</a></li>
+                        <li role="none"><a aria-label="Download App" href="#">Download App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <form action="#">
+                        <div class="d-flex align-items-center">
+                            <img id="india" class="flag_india  img-fluid rounded-circle  pe-1"
+                                style="width: 1.6rem; height: 1.5rem;" src="./image/india.png" alt="flag_india">
+                            <img id="usa" class="flag img-fluid rounded-circle  pe-1"
+                                style="width: 1.6rem; height: 1.5rem;" src="./image/usa.png" alt="flag_usa">
+                            <img id="canada" class="flag img-fluid rounded-circle  pe-1"
+                                style="width: 1.6rem; height: 1.5rem;" src="./image/canada.png" alt="flag">
+                            <img id="uae" class="flag img-fluid rounded-circle  pe-1"
+                                style="width: 1.6rem; height: 1.5rem;" src="./image/uae.png" alt="flag">
+                            <select aria-label="select language" id="cuntary" onchange="addflag('flag_india')"
+                                title="select language">
+                                <option value="india">India</option>
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                                <option value="uae">UAE</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="d-flex justify-content-between align-items-end   pb-2 px-2 px-md-4" style="padding-top: 4.5rem;">
+
+            <figure tabindex="0" class="logo">
+                <img src="./image/logo.png" class="img-fluid" alt="swag of india logo with lots flower">
+            </figure>
+            <div role="menubar" class="d-none d-md-block">
+                <ul class=" d-flex mb-2 navorder2">
+                    <li role="none"><a role="menuitem" aria-label="home" tabindex="0" href="./homePage.html">Home</a></li>
+                    <li role="none"><a role="menuitem" aria-label="Categories" href="#">Categories</a></li>
+                    <li role="none"><a role="menuitem" aria-expanded="true" href="#">Latest</a>
+                        <!-- submenu -->
+                        <ul role="menu" aria-label="Latest" tabindex="-1"
+                            class="bg-light  px-3 ps-2 pe-4 mt-2  submenu">
+                            <li role="none"><a role="menuitem" href="./return.html">Return policy</a></li>
+                            <li role="none"><a role="menuitem" href="#">Menu Two</a role="menuitem"></li>
+                            <li role="none"><a role="menuitem" href="#">Menu Three</a role="menuitem"></li>
+                            <li role="none"><a role="menuitem" href="#">Menu four</a></li>
+                        </ul>
+                        <!-- submenu start -->
+                    </li>
+                    <li role="none"><a role="menuitem" aria-label="blog" href="#">Blog</a></li>
+                    <li role="none"><a role="menuitem" aria-label="Pages" href="#">Pages</a></li>
+                    <li role="none"><a role="menuitem" aria-label="Contact" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class=" mb-2 navorder3 d-flex" >
+
+                    <a href="./cart_page.html">
+                     <div style="position: relative;">
+                     <img src="./image/Group 2551.png" class="" alt="cart">
+                     <span class="position-absolute translate-middle   badge rounded-circle bg-danger" id="itemCount" style="top: 8px; left: 5px;">
+                         0
+                         <span class="visually-hidden">unread messages</span>
+                       </span>
+                     </div>
+                    </a>
+ 
+                    <a href="./wishlist.html">
+                     <div style="position: relative;">
+                     <img src="./image/Group 2579.png" class="" alt="cart">
+                     <span class="position-absolute translate-middle   badge rounded-circle bg-danger" id="wishListitemCount" style="top: 8px; left: 5px;">
+                         0
+                         <span class="visually-hidden">unread messages</span>
+                       </span>
+                     </div>
+                    </a>
+ 
+                 </div>
+                <div class="navorder4">
+                    <a href="./Login.html"><button class="btnanimation" title="login page">Sign in</button></a>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+
+    <!-- header end  -->
+
+
+
+    <main>
+        <!-- hero area  -->
+
+
+
+
+        <nav aria-label="breadcrumb" class="bg-light pt-2 pb-1 mx-3 px-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./homePage.html">Home</a></li>
+                <li class="breadcrumb-item fw-bold " aria-current="page">Return</li>
+            </ol>
+        </nav>
+
+        <div class=" container-fluid">
+            <div id="eyeViewProductArea"></div>
+
+            <div class="row py-5 mx-2">
+                <div class="col">
+                    <div class="slider">
+                        <div id="multipulImageViewBox">
+                            <!-- <div class="Product d-flex flex-column align-items-center justify-conten-evenly">
+                                <img src="./image/product1.png" onclick="imageView(this)" alt="">
+                                <img src="./image/product2.png" onclick="imageView(this)" alt="">
+                                <img src="./image/product3.png" onclick="imageView(this)" alt="">
+                                <img src="./image/product4.png" onclick="imageView(this)" alt="">
+                            </div> -->
+                        </div>
+                        <div class="preview" id="previewImag">
+                            <img src="" id="preview" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4 class="fw-bold">Classic Chinos Pants</h4>
+                    <i class=" star-0 fa fa-star" onclick="star('star-0')"></i>
+                    <i class=" star-1 fa fa-star" onclick="star('star-1')"></i>
+                    <i class=" star-2 fa fa-star" onclick="star('star-2')"></i>
+                    <i class=" star-3 fa fa-star" onclick="star('star-3')"></i>
+                    <i class=" star-4 fa fa-star-o" onclick="star('star-4')"></i>
+                    <p class=" greentext"><span>39,122</span> rating | 1000+ answered questions</p>
+
+                    <p class="fw-bold fs-4" id="priceDetailsView">
+                        <!-- Rs <span>1099.0</span> <del>Rs 2748.0</del> <span
+                            class="maincolor fw-bold">(60% off)</span> -->
+                        </p>
+
+                    <h6 class="fw-bold pt-2 mb-1">Short Description</h6>
+                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, assumenda,
+                        officia sed ipsum nisi quam laborum vel aliquid sunt quisquam exercitationem. Provident, nisi
+                        reiciendis aspernatur expedita iure odit. Voluptates, cupiditate!</p>
+                    <div class="choice mb-4 d-flex justify-content-between align-items-center">
+                        <div class="size">
+                            <p class="fw-bold">SELECT SIZE</p>
+                            <ul class="d-flex p-0">
+                                <li class="sizeNumber sizeNumber1" onclick="active('sizeNumber1')">39</li>
+                                <li class="sizeNumber sizeNumber2" onclick="active('sizeNumber2')">40</li>
+                                <li class="sizeNumber sizeNumber3" onclick="active('sizeNumber3')">42</li>
+                                <li class="sizeNumber sizeNumber4" onclick="active('sizeNumber4')">44</li>
+                            </ul>
+                        </div>
+                        <div id="qtyBoxHTML" class="">
+                            <!-- <p class=" fw-bold">QTY</p> -->
+                            <!-- <div class="qtybox" > -->
+                                <!-- <span><I class="fa fa-minus"></I></span>
+                                 <input id="qtyInput" type="text" value="1"class="qty qtycount">
+                                 <span id="plus"><I aria-expanded="true" aria-controls="plus" class="fa fa-plus"></I></span> </div> -->
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4" id="previewButton">
+                        <!-- <button class="btn bg-maincolor">ADD TO CART</button>
+                        <button class="btn bg-maincolor">BUY NOW</button> -->
+                        <!-- <span class="heart ms-auto "><i class="fa fa-heart-o"></i></span> -->
+                    </div>
+                    <div class=" d-flex align-items-center mb-4">
+                        <p class="fw-bold mb-0">SHARE THIS</p>
+                        <ul aria-label="socialmedia" tabindex="0" class="d-flex align-items-center ps-4 mb-0">
+                            <li><img tabindex="0" title="facbook" src="./image/facebook round.png" class="img-fluid "
+                                    alt="facebook"></li>
+                            <li><img tabindex="0" title="youtube" src="./image/Group 2556.png" class="img-fluid"
+                                    alt="youtube">
+                            </li>
+                            <li><img tabindex="0" title="twitter" src="./image/Group 2557.png" class="img-fluid" s
+                                    alt="twitter"></li>
+                        </ul>
+                    </div>
+                    <div class=" d-flex align-items-center ">
+                        <div class="delivery d-flex align-items-center justify-content-between me-5">
+                            <img src="./image/Image 170.png" style="width: 4rem;" alt="">
+                            <p class="mb-0 fw-bold ps-3">DELIVERY & RETURN</p>
+                        </div>
+                        <div class="support d-flex align-items-center justify-content-between ">
+                            <img src="./image/Image 171.png" style="width: 3rem;" alt="">
+                            <p class="mb-0 fw-bold ps-3">ONLINE SUPPORT 24/7</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- <div class="row-1">
+                  <div class="colIm border">
+                      <div class="slider">
+                          <div class="Product">
+                            <img src="./image/product1.png" alt="">
+                            <img src="./image/product2.png" alt="">
+                            <img src="./image/product3.png" alt="">
+                            <img src="./image/product4.png" alt="">
+                          </div>
+                          <div class="preview">
+                            <img src="./image/product3.png" alt="">
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="colIm border"></div>
+              </div> -->
+        </div>
+
+        <div class="container-fluid mb-5">
+            <ul class="nav mb-5 nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="bg-white fw-bold active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="bg-white fw-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Sizing Guide</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="bg-white fw-bold" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">Assigned Tags</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="bg-white fw-bold" id="custom-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">Many Custom Tabs</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <p>Give ypu a complete account of the system</p>
+                    <p class="fw-normal">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit ipsum eveniet nisi
+                        officiis nobis at quasi numquam nulla velit magni expedita odio porro a ea molestiae quos
+                        maxime. Nemo nostrum facere placeat magni dicta cupiditate itaque earum! Tempora distinctio
+                        expedita saepe. Est consequuntur, autem officiis voluptates incidunt dolor suscipit.
+                    </p>
+                    <p class="fw-normal">
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nostrum architecto. Esse
+                        facere dicta ducimus quidem vitae inventore quo ipsa asperiores pariatur itaque deserunt
+                        assumenda reprehenderit neque debitis, est, id non vero unde porro a! Quia, nisi veniam nam,
+                        harum quod alias dolorum minus voluptas earum possimus modi necessitatibus? Nobis voluptatibus
+                        quisquam sequi tempora neque recusandae odio debitis repellat ducimus asperiores architecto
+                        eligendi sint, iste libero autem id provident impedit magni quas dolorem voluptatem quia
+                        repudiandae ab. Molestiae saepe fugiat rem? Ipsam quisquam, natus qui aut unde est aspernatur
+                        asperiores aliquid quos ea mollitia, iusto voluptas pariatur reiciendis et quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam consequuntur, possimus voluptates placeat, a repellat tempore autem ab saepe earum, suscipit corporis? Fuga possimus impedit reprehenderit corporis alias nemo nesciunt sunt eaque eum natus in, earum doloribus porro voluptatem temporibus vitae, quos consectetur exercitationem aspernatur sapiente quaerat amet nisi!
+                    </p>
+                    <p class="fw-normal">
+
+
+
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto maiores repudiandae quasi
+                        quas autem voluptas temporibus, corporis eum consequuntur omnis!lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero mollitia consequatur vitae voluptas nisi praesentium. Minus ipsum tempora eaque quo consequatur doloribus vero soluta nesciunt. Ipsa quam eaque vero unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptate numquam delectus! Harum ad officiis delectus vitae quod quibusdam sunt. Atque accusamus voluptatem at tempora veniam quas dolores impedit inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quia numquam quos vel ducimus praesentium autem dolorum unde mollitia possimus culpa? Tempora, quos reprehenderit ratione voluptatem sapiente tempore aliquid dolor error magni amet soluta? Doloribus quis ipsum consectetur eligendi praesentium hic perspiciatis aliquid ex tempore aperiam. Nihil, amet! Debitis, libero?
+                    </p>
+                    <p class="fw-normal">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit eum cumque dolor facilis
+                        dolorem esse ad magni harum, temporibus enim, id nam aliquam dolorum vitae eligendi est ipsam?
+                        Nam sint beatae ipsam rerum numquam ex animi eius facilis deleniti, at sapiente, impedit soluta
+                        iusto delectus? Sunt obcaecati atque quod.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <p>Give ypu a complete account of the system</p>
+                    <p class="fw-normal">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit ipsum eveniet nisi
+                        officiis nobis at quasi numquam nulla velit magni expedita odio porro a ea molestiae quos
+                        maxime. Nemo nostrum facere placeat magni dicta cupiditate itaque earum! Tempora distinctio
+                        expedita saepe. Est consequuntur, autem officiis voluptates incidunt dolor suscipit.
+                    </p>
+                    <p class="fw-normal">
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nostrum architecto. Esse
+                        facere dicta ducimus quidem vitae inventore quo ipsa asperiores pariatur itaque deserunt
+                        assumenda reprehenderit neque debitis, est, id non vero unde porro a! Quia, nisi veniam nam,
+                        harum quod alias dolorum minus voluptas earum possimus modi necessitatibus? Nobis voluptatibus
+                        quisquam sequi tempora neque recusandae odio debitis repellat ducimus asperiores architecto
+                        eligendi sint, iste libero autem id provident impedit magni quas dolorem voluptatem quia
+                        repudiandae ab. Molestiae saepe fugiat rem? Ipsam quisquam, natus qui aut unde est aspernatur
+                        asperiores aliquid quos ea mollitia, iusto voluptas pariatur reiciendis et quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam consequuntur, possimus voluptates placeat, a repellat tempore autem ab saepe earum, suscipit corporis? Fuga possimus impedit reprehenderit corporis alias nemo nesciunt sunt eaque eum natus in, earum doloribus porro voluptatem temporibus vitae, quos consectetur exercitationem aspernatur sapiente quaerat amet nisi!
+                    </p>
+                    <p class="fw-normal">
+
+
+
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto maiores repudiandae quasi
+                        quas autem voluptas temporibus, corporis eum consequuntur omnis!lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero mollitia consequatur vitae voluptas nisi praesentium. Minus ipsum tempora eaque quo consequatur doloribus vero soluta nesciunt. Ipsa quam eaque vero unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptate numquam delectus! Harum ad officiis delectus vitae quod quibusdam sunt. Atque accusamus voluptatem at tempora veniam quas dolores impedit inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quia numquam quos vel ducimus praesentium autem dolorum unde mollitia possimus culpa? Tempora, quos reprehenderit ratione voluptatem sapiente tempore aliquid dolor error magni amet soluta? Doloribus quis ipsum consectetur eligendi praesentium hic perspiciatis aliquid ex tempore aperiam. Nihil, amet! Debitis, libero?
+                    </p>
+                    <p class="fw-normal">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit eum cumque dolor facilis
+                        dolorem esse ad magni harum, temporibus enim, id nam aliquam dolorum vitae eligendi est ipsam?
+                        Nam sint beatae ipsam rerum numquam ex animi eius facilis deleniti, at sapiente, impedit soluta
+                        iusto delectus? Sunt obcaecati atque quod.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <p>Give ypu a complete account of the system</p>
+                    <p class="fw-normal">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit ipsum eveniet nisi
+                        officiis nobis at quasi numquam nulla velit magni expedita odio porro a ea molestiae quos
+                        maxime. Nemo nostrum facere placeat magni dicta cupiditate itaque earum! Tempora distinctio
+                        expedita saepe. Est consequuntur, autem officiis voluptates incidunt dolor suscipit.
+                    </p>
+                    <p class="fw-normal">
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nostrum architecto. Esse
+                        facere dicta ducimus quidem vitae inventore quo ipsa asperiores pariatur itaque deserunt
+                        assumenda reprehenderit neque debitis, est, id non vero unde porro a! Quia, nisi veniam nam,
+                        harum quod alias dolorum minus voluptas earum possimus modi necessitatibus? Nobis voluptatibus
+                        quisquam sequi tempora neque recusandae odio debitis repellat ducimus asperiores architecto
+                        eligendi sint, iste libero autem id provident impedit magni quas dolorem voluptatem quia
+                        repudiandae ab. Molestiae saepe fugiat rem? Ipsam quisquam, natus qui aut unde est aspernatur
+                        asperiores aliquid quos ea mollitia, iusto voluptas pariatur reiciendis et quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam consequuntur, possimus voluptates placeat, a repellat tempore autem ab saepe earum, suscipit corporis? Fuga possimus impedit reprehenderit corporis alias nemo nesciunt sunt eaque eum natus in, earum doloribus porro voluptatem temporibus vitae, quos consectetur exercitationem aspernatur sapiente quaerat amet nisi!
+                    </p>
+                    <p class="fw-normal">
+
+
+
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto maiores repudiandae quasi
+                        quas autem voluptas temporibus, corporis eum consequuntur omnis!lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero mollitia consequatur vitae voluptas nisi praesentium. Minus ipsum tempora eaque quo consequatur doloribus vero soluta nesciunt. Ipsa quam eaque vero unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptate numquam delectus! Harum ad officiis delectus vitae quod quibusdam sunt. Atque accusamus voluptatem at tempora veniam quas dolores impedit inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quia numquam quos vel ducimus praesentium autem dolorum unde mollitia possimus culpa? Tempora, quos reprehenderit ratione voluptatem sapiente tempore aliquid dolor error magni amet soluta? Doloribus quis ipsum consectetur eligendi praesentium hic perspiciatis aliquid ex tempore aperiam. Nihil, amet! Debitis, libero?
+                    </p>
+                    <p class="fw-normal">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit eum cumque dolor facilis
+                        dolorem esse ad magni harum, temporibus enim, id nam aliquam dolorum vitae eligendi est ipsam?
+                        Nam sint beatae ipsam rerum numquam ex animi eius facilis deleniti, at sapiente, impedit soluta
+                        iusto delectus? Sunt obcaecati atque quod.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="custom" role="tabpanel" aria-labelledby="contact-tab">
+                    <p>Give ypu a complete account of the system</p>
+                    <p class="fw-normal">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit ipsum eveniet nisi
+                        officiis nobis at quasi numquam nulla velit magni expedita odio porro a ea molestiae quos
+                        maxime. Nemo nostrum facere placeat magni dicta cupiditate itaque earum! Tempora distinctio
+                        expedita saepe. Est consequuntur, autem officiis voluptates incidunt dolor suscipit.
+                    </p>
+                    <p class="fw-normal">
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, nostrum architecto. Esse
+                        facere dicta ducimus quidem vitae inventore quo ipsa asperiores pariatur itaque deserunt
+                        assumenda reprehenderit neque debitis, est, id non vero unde porro a! Quia, nisi veniam nam,
+                        harum quod alias dolorum minus voluptas earum possimus modi necessitatibus? Nobis voluptatibus
+                        quisquam sequi tempora neque recusandae odio debitis repellat ducimus asperiores architecto
+                        eligendi sint, iste libero autem id provident impedit magni quas dolorem voluptatem quia
+                        repudiandae ab. Molestiae saepe fugiat rem? Ipsam quisquam, natus qui aut unde est aspernatur
+                        asperiores aliquid quos ea mollitia, iusto voluptas pariatur reiciendis et quas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam consequuntur, possimus voluptates placeat, a repellat tempore autem ab saepe earum, suscipit corporis? Fuga possimus impedit reprehenderit corporis alias nemo nesciunt sunt eaque eum natus in, earum doloribus porro voluptatem temporibus vitae, quos consectetur exercitationem aspernatur sapiente quaerat amet nisi!
+                    </p>
+                    <p class="fw-normal">
+
+
+
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto maiores repudiandae quasi
+                        quas autem voluptas temporibus, corporis eum consequuntur omnis!lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero mollitia consequatur vitae voluptas nisi praesentium. Minus ipsum tempora eaque quo consequatur doloribus vero soluta nesciunt. Ipsa quam eaque vero unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptate numquam delectus! Harum ad officiis delectus vitae quod quibusdam sunt. Atque accusamus voluptatem at tempora veniam quas dolores impedit inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quia numquam quos vel ducimus praesentium autem dolorum unde mollitia possimus culpa? Tempora, quos reprehenderit ratione voluptatem sapiente tempore aliquid dolor error magni amet soluta? Doloribus quis ipsum consectetur eligendi praesentium hic perspiciatis aliquid ex tempore aperiam. Nihil, amet! Debitis, libero?
+                    </p>
+                    <p class="fw-normal">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit eum cumque dolor facilis
+                        dolorem esse ad magni harum, temporibus enim, id nam aliquam dolorum vitae eligendi est ipsam?
+                        Nam sint beatae ipsam rerum numquam ex animi eius facilis deleniti, at sapiente, impedit soluta
+                        iusto delectus? Sunt obcaecati atque quod.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-4">
+                    <p class="fw-bold fs-4">Customer Reviews</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <span class="fw-bold">2.5 out of 5 star</span>
+                    <p class="mt-3">3 custmor rating</p>
+                    <div class="row mb-5">
+                        <div class="col-auto">
+                            <p class="mb-1 fw-bold  text-primary">5 Star</p>
+                            <p class="mb-1 fw-bold ">4 Star</p>
+                            <p class="mb-1 fw-bold ">3 Star</p>
+                            <p class="mb-1 fw-bold ">2 Star</p>
+                            <p class="mb-1 fw-bold  text-primary ">1 Star</p>
+                        </div>
+                        <div class="col-8">
+                            <div class="progress border border-secondary rounded-0 mb-1 " style="height: 1.5rem;" >
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 37%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <div class="progress border border-secondary rounded-0 mb-1" style="height: 1.5rem;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <div class="progress border border-secondary rounded-0 mb-1" style="height: 1.5rem;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <div class="progress border border-secondary rounded-0 mb-1" style="height: 1.5rem;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <div class="progress border border-secondary rounded-0 mb-1" style="height: 1.5rem;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 63%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </div>
+                        <div class="col-auto">
+                            <p class="mb-1 fw-bold text-primary">37%</p>
+                            <p class="mb-1 fw-bold">0%</p>
+                            <p class="mb-1 fw-bold">0%</p>
+                            <p class="mb-1 fw-bold">0%</p>
+                            <p class="mb-1 fw-bold text-primary">63%</p>
+                        </div>
+                    </div>
+                   <p class="fw-bold fs-4 mb-3">Review this Product</p>
+                   <p class="fw-normal fs-6">Share your thoughts with other customers</p>
+                   <button class=".btn rounded bg-maincolor">Write a Product Review</button>
+                </div>
+                <div class="col-8">
+                    <div class="mb-5 pb-3">
+                  <img src="./image/Group 2592.png" style="height: 3.5rem; width: 3.5rem;" alt="">  
+                  <span class="ms-2 fw-bold fs-5" >Dr. John Varghese Parampil</span><br>
+                  <i class="mt-3 fa fa-star"></i>
+                  <i class="mt-3 fa fa-star"></i>
+                  <i class="mt-3 fa fa-star"></i>
+                  <i class="mt-3 fa fa-star"></i>
+                  <i class="mt-3 fa fa-star-o"></i>
+                  <span class="fw-bold ms-2" >Early delivery., Very reasonalble price</span>
+                  <p class=" fw-normal mt-3">Reviewed in india on 8 July 2020</p>
+                  <p class="fw-bold fs-5 text-danger">Verified Purchase</p>
+                  <p>Manufacture year is 2018. So CEAT company rejected online registration for extended warranty but they said this tyres are eligiblile for normal warranty for the balance 3 years. When i compare the price , I found, it is reasonable.
+
+                  </p>
+                  <p class="mb-4">
+                      in short, if you are looking for full warranty of 5 years with unlimited exteded warranty of six months, buy
+                  </p>
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Helpful</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Comment</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Report abuse</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mb-5 pb-3" >
+                    <img src="./image/Group 2592.png" style="height: 3.5rem; width: 3.5rem;" alt="">  
+                    <span class="ms-2 fw-bold fs-5" >Dr. John Varghese Parampil</span><br>
+                    <i class="mt-3 fa fa-star"></i>
+                    <i class="mt-3 fa fa-star"></i>
+                    <i class="mt-3 fa fa-star"></i>
+                    <i class="mt-3 fa fa-star"></i>
+                    <i class="mt-3 fa fa-star-o"></i>
+                    <span class="fw-bold ms-2" >Early delivery., Very reasonalble price</span>
+                    <p class=" fw-normal mt-3">Reviewed in india on 8 July 2020</p>
+                    <p class="fw-bold fs-5 text-danger">Verified Purchase</p>
+                    <p>Manufacture year is 2018. So CEAT company rejected online registration for extended warranty but they said this tyres are eligiblile for normal warranty for the balance 3 years. When i compare the price , I found, it is reasonable.
+  
+                    </p>
+                    <p class="mb-4">
+                        in short, if you are looking for full warranty of 5 years with unlimited exteded warranty of six months, buy
+                    </p>
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Helpful</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Comment</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Report abuse</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="fw-bold " href="#">See all reviews frpm india</a>
+                </div>
+                <hr class=" mt-3">
+            </div>
+        </div>
+
+
+
+
+        <section class="mb-5 pb-5">  
+
+
+            <div class="sectionheading">
+                <h2 id="Latest" class="mb-5">RELATED PRODUCTS</h2>
+            </div>
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="d-flex">
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                   
+                    <div class="d-flex">
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex">
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="pcardimage"><img src="./image/product2.png" class="card-img-top" alt="long sleep green top for girls  with too cool brand name  and size 25">
+                                <div class="pcardoffer"><span>New</span></div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dummy Text Lorel</h5>
+                                <p class="card-text">Rs 1099.0 <del>Rs 2748 </del><span class="text-danger"> (60%
+                                        off)</span></p>
+                                <div class="pcardstar">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+
+
+
+
+              
+        </section>
+
+
+
+
+
+        <section aria-label="services place" tabindex="0" class="services text-center mt-5">
+            <div class="servicesflex d-lg-flex justify-content-center align-items-center gap-4 ">
+                <div class="servicescard d-flex flex-column align-items-center justify-content-center">
+                    <div tabindex="0" class="serviceimage">
+                        <img src="./image/Image 34.png" alt="SECURE payment">
+                    </div>
+                    <div>
+                        <h3>100% SECURE PAYMENTS</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo soluta sequi
+                            nam?
+                            Eveniet veniam in, tempora eligendi obcaecati iste.</P>
+                    </div>
+                </div>
+                <div class="servicescard d-flex flex-column align-items-center justify-content-center">
+                    <div tabindex="0" class="serviceimage">
+                        <img src="./image/Image 35.png" alt="trustpay">
+                    </div>
+                    <div>
+                        <h3>TRUSTPAY</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo soluta sequi
+                            nam?
+                            Eveniet veniam in, tempora eligendi obcaecati iste.</P>
+                    </div>
+                </div>
+                <div class="servicescard d-flex flex-column align-items-center justify-content-center">
+                    <div tabindex="0" class="serviceimage">
+                        <img src="./image/Image 36.png" alt="help center">
+                    </div>
+                    <div>
+                        <h3>HELP CENTER</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo soluta sequi
+                            nam?
+                            Eveniet veniam in, tempora eligendi obcaecati iste.</P>
+                    </div>
+                </div>
+                <div class="servicescard d-flex flex-column align-items-center justify-content-center">
+                    <div class="serviceimage" tabindex="0">
+                        <img src="./image/Image 37.png" alt="shop on the go">
+                    </div>
+                    <div>
+                        <h3>SHOP ON THE GO</h3>
+                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo soluta sequi
+                            nam?
+                            Eveniet veniam in, tempora eligendi obcaecati iste.</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <footer role="contentinfo" class="my-4 mx-0r">
+        <div>
+            <div id="mainfooter" class="mainfooter py-5 px-0 d-lg-flex justify-content-between">
+                <div>
+                    <div>
+                        <h5>POLICY INFO</h5>
+                    </div>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Sale</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Repor Abuse & Takedown Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h5>COMPANY</h5>
+                    </div>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Core Value</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h5>SNAPDEAL BUSNESS</h5>
+                    </div>
+                    <ul>
+                        <li><a href="#">Shopping App</a></li>
+                        <li><a href="#">Advertise On Snapdeal</a></li>
+                        <li><a href="#">Media Enquires</a></li>
+                        <li><a href="#">Sell on Snapdeal</a></li>
+                        <li><a href="#">Be an Affilate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h5>NEED HELP?</h5>
+                    </div>
+                    <ul>
+                        <li><a href="./FAQ.html">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Online Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h5>SUBSCRIBE</h5>
+                    <form action="#">
+                        <div class="subscribeinput d-flex align-items-center">
+                            <input type="email" name="email" id="email" placeholder="Your Email Addres "
+                                class="text-center">
+                            <button title="subscribe button" class="btnblack">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="payment d-lg-flex justify-content-between">
+                <div aria-label=" payment place" tabindex="0">
+                    <h3>PAYMENT</h3>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 38.png"
+                                alt="all cards accept here"></div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 39.png" alt="U P I"></div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 40.png" alt="E M I"></div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 41.png" alt="internet banking">
+                        </div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 42.png" alt="I M P S"></div>
+                        <div class="paymentimage"><img tabindex="0" src="./image/Image 43.png" alt="Wallet"></div>
+                    </div>
+                </div>
+                <div class="socialmedia" aria-label=" join our socialmedia chenels" tabindex="0">
+                    <h3>CONNECT</h3>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="footersocial"><img tabindex="0" src="./image/Image 44.png" alt="facebook"></div>
+                        <div class="footersocial"><img tabindex="0" src="./image/Image 45.png" alt="twitter"></div>
+                        <div class="footersocial"><img tabindex="0" src="./image/Image 46.png" alt="youtube"></div>
+                        <div class="footersocial"><img tabindex="0" src="./image/Image 47.png" alt="instagram"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <a aria-labelledby="arrow" class="pageup" href="#top"><i id="arrow" class="fa fa-angle-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        // var flag = document.getElementById("fla").style.display="none";
+    </script>
+    <script src="./home.js"></script>
+</body>
+
+</html>

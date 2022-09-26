@@ -1,0 +1,72 @@
+:root {
+    --maincolor:#f8880f;
+    --white:#fff;
+    --btnyellow:#ffce25;
+    --black:black;
+    --red:red;
+    --blue:blue;
+    --green:rgb(118, 247, 33);
+    --lightgray:rgb(197, 194, 194);
+    --indianred:rgb(235, 68, 68);
+    --ligbackground:rgb(240, 231, 231);
+    --gold:gold;
+}
+
+.nav-link{
+    padding: 0.3rem 0.5rem;
+}
+.hover{
+    color: var(--black);
+}
+.hover:hover{
+    background-color: var(--lightgray);
+    color: var(--maincolor);
+}
+.maincolor{
+    color: var(--maincolor);
+}
+
+.bg-maincolor{
+    background-color: var(--maincolor);
+}
+
+.redtext{
+    color: var(--red);
+}
+
+.greentext{
+    color: rgb(0, 192, 0);
+}
+.list-group-item {
+    border: none;
+    padding-left: 0.5rem;
+}
+
+.form-check-input[type=checkbox]:checked{
+background-color: var(--maincolor);
+}
+.form-check-input[type=radio]:checked{
+    background-color: var(--maincolor);
+    }
+
+
+
+     
+    .pcard{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        /* margin-top: 1rem; */
+        /* padding-top: 2rem; */
+    }
+    @media only screen and (min-width:768px) and (max-width:1024px){
+        main .pcardwrap .pcard {
+            grid-template-columns: 1fr  1fr ;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+    @media only screen and (max-width:768px) {
+        .pcard {
+            grid-template-columns: 1fr ;
+        }
+    }

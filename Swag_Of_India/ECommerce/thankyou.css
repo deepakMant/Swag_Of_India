@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --maincolor:#f8880f;
+    --white:#fff;
+    --btnyellow:#ffce25;
+    --black:black;
+    --red:red;
+    --blue:blue;
+    --green:rgb(118, 247, 33);
+    --lightgray:rgb(197, 194, 194);
+    --indianred:rgb(235, 68, 68);
+    --ligbackground:rgb(240, 231, 231);
+    --gold:gold;
+}
+h2 {
+    font-size: 4.8rem;
+    line-height: 1.2;
+}
+
+@media only screen and (min-width:1032px) and (max-width:1087px){
+    h2 {
+        font-size: 4.5rem;
+    }
+}
+@media only screen and (min-width:836px) and (max-width:1032px){
+    h2 {
+        font-size: 4.2rem;
+    }
+}
+@media only screen and (min-width:805px) and (max-width:836px){
+    h2 {
+        font-size: 4rem;
+    }
+}
+@media only screen and (min-width:588px) and (max-width:805px){
+    h2 {
+        font-size: 3.7rem;
+    }
+}
+@media only screen and (min-width:463px) and (max-width:588px){
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:463px){
+    h2 {
+        font-size: 3rem;
+    }
+}
+.p-bg {
+    background-color: var(--maincolor);
+    font-size: 1.5rem;
+}
+
+.position {
+    position: relative;
+    margin: 3rem 0rem;
+}
+.span-up {
+    font-size: 1.5rem;
+    background-color:var(--white);
+    display: inline-block;
+    padding: 0rem 1rem;
+    position: absolute;
+    top: -12%;
+    left: 35%;
+}
+
+span{
+    color: var(--maincolor);
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 5px solid var(--lightgray);
+    display: block;
+    /* padding: 0.5ren 1.5rem; */
+}
+
+.span-down {
+    font-size: 1.2rem;
+    background-color:var(--white);
+    display: inline-block;
+    padding: 0rem 1rem;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+}
+p.code {
+    font-size: 1.3rem;
+}

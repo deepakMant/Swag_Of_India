@@ -1,0 +1,27 @@
+:root {
+    --maincolor:#f8880f;
+    --white:#fff;
+    --btnyellow:#ffce25;
+    --black:black;
+    --red:red;
+    --blue:blue;
+    --green:rgb(118, 247, 33);
+    --lightgray:rgb(197, 194, 194);
+    --indianred:rgb(235, 68, 68);
+    --ligbackground:rgb(240, 231, 231);
+    --gold:gold;
+}
+.container-bg{
+    background-color: var(--maincolor);
+}
+.btn-bg {
+    background-color: var(--maincolor);
+    color: var(--white);
+}
+
+.myheading{
+    margin: 14rem auto 7rem;
+}
+.johan{
+    margin-bottom: 8rem;
+}

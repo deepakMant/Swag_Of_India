@@ -1,0 +1,65 @@
+:root {
+    --maincolor:#f8880f;
+    --white:#fff;
+    --btnyellow:#ffce25;
+    --black:black;
+    --red:red;
+    --blue:blue;
+    --green:rgb(118, 247, 33);
+    --lightgray:rgb(197, 194, 194);
+    --indianred:rgb(235, 68, 68);
+    --ligbackground:rgb(240, 231, 231);
+    --gold:gold;
+}
+
+.nav-link{
+    padding: 0.3rem 0.5rem;
+}
+.hover{
+    color: var(--black);
+}
+.hover:hover{
+    background-color: var(--lightgray);
+    color: var(--maincolor);
+}
+.maincolor{
+    color: var(--maincolor);
+}
+
+.bg-maincolor{
+    background-color: var(--maincolor);
+}
+
+.redtext{
+    color: var(--red);
+}
+
+.greentext{
+    color: rgb(0, 192, 0);
+}
+table{
+    margin-left: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+table tr td{
+    padding: 1rem 4.5rem 1rem 0;
+}
+table tr td:nth-child(2){
+    font-weight: bold;
+}
+table tr td:nth-child(1){
+    font-weight: normal;
+}
+table tr:nth-child(5) td:nth-child(2),table tr:nth-child(6) td:nth-child(2){
+    color: var(--lightgray);
+}
+table+button.btnanimation{
+    margin-left: 7rem;
+    padding: .7rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.hide{
+    display: none;
+}
